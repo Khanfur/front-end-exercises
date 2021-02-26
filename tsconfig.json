@@ -4,17 +4,46 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "target": "es2015",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+      "declaration": false,
+      "downlevelIteration": true,
+      "experimentalDecorators": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "importHelpers": true,
+      "target": "es2015",
+      "lib": [
+          "es2018",
+          "dom"
+      ],
+      "paths": {
+          "@app-components/*": [
+              "src/app/components/*"
+          ],
+          "@app-environments/*": [
+              "src/environments/*"
+          ],
+          "@app-guards/*": [
+              "src/app/guards/*"
+          ],
+          "@app-interfaces/*": [
+              "src/app/interfaces/*"
+          ],
+          "@app-modules/*": [
+              "src/app/modules/*"
+          ],
+          "@app-pages/*": [
+              "src/app/pages/*"
+          ],
+          "@app-pipes/*": [
+              "src/app/pipes/*"
+          ],
+          "@app-services/*": [
+              "src/app/services/*"
+          ],
+          "@app-theme/*": [
+              "theme/*"
+          ]
+      }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
