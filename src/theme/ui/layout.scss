@@ -1,0 +1,59 @@
+$paddingMarginSizes: (
+    xs: 4px,
+    sm: 8px,
+    md: 16px,
+    lg: 24px,
+    xl: 32px,
+    xxl: 64px,
+);
+
+$locations: (
+    top,
+    left,
+    right,
+    bottom,
+);
+
+$properties: (
+    padding,
+    margin,
+);
+
+@each $paddingMarginSize, $size in $paddingMarginSizes {
+    @each $location in $locations {
+        @each $property in $properties {
+            .#{$property}-#{$location}-#{$paddingMarginSize} {
+                #{$property}-#{$location}: $size;
+            }
+        }
+    }
+
+    @each $property in $properties {
+
+        .#{$property}-#{$paddingMarginSize} {
+            #{$property}-top: $size;
+            #{$property}-right: $size;
+            #{$property}-bottom: $size;
+            #{$property}-left: $size;
+        }
+
+        .#{$property}-horizontal-#{$paddingMarginSize} {
+            #{$property}-left: $size;
+            #{$property}-right: $size;
+        }
+
+        .#{$property}-vertical-#{$paddingMarginSize} {
+            #{$property}-top: $size;
+            #{$property}-bottom: $size;
+        }
+    }
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
