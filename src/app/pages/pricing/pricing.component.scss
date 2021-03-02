@@ -94,6 +94,19 @@ $primary-gradient: linear-gradient(to right bottom, hsl(236, 72%, 79%), hsl(237,
 
 
     .cards {
+        position: relative;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 2rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
 
         button {
             height: 40px;
@@ -110,6 +123,10 @@ $primary-gradient: linear-gradient(to right bottom, hsl(236, 72%, 79%), hsl(237,
             width: 250px;
             height: 350px;
             border-radius: 8px;
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 2rem;
+            }
 
             button {
                 color: $primary-light;
@@ -138,6 +155,10 @@ $primary-gradient: linear-gradient(to right bottom, hsl(236, 72%, 79%), hsl(237,
             button {
                 color: $primary;
                 background-color: $primary-light;
+            }
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 2rem;
             }
 
             .benefits {

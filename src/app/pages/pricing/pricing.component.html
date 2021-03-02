@@ -13,7 +13,7 @@
             Annually
         </h4>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" (click)="changePricePeriod()">
             <span class="slider round"></span>
         </label>
         <h4 class="no-margin padding-left-sm primary-medium">
@@ -21,14 +21,27 @@
         </h4>
     </div>
 
-    <div class="margin-top-lg cards center-content">
+    <div class="margin-top-lg cards">
         <div class="unfocused">
             <h4 class="primary-dark center-content no-margin padding-vertical-md">
                 Basic
             </h4>
-            <h2 class="primary-dark center-content no-margin padding-bottom-lg">
-                $ 199.99
-            </h2>
+
+            <div class="center-content padding-bottom-lg">
+                <h3 class="primary-dark center-content no-margin padding-right-sm">
+                    $
+                </h3>
+                <h2 class="primary-dark center-content no-margin"
+                    *ngIf="!monthlyPrice"
+                >
+                    199.99
+                </h2>
+                <h2 class="primary-dark center-content no-margin"
+                    *ngIf="monthlyPrice"
+                >
+                    19.99
+                </h2>
+            </div>
 
             <div class="benefits center-content padding-vertical-sm">
                 <h4 class="primary-dark no-margin">
@@ -56,9 +69,22 @@
             <h4 class="white center-content no-margin padding-vertical-md">
                 Professional
             </h4>
-            <h2 class="white center-content no-margin padding-bottom-lg">
-                $ 249.99
-            </h2>
+
+            <div class="center-content padding-bottom-lg">
+                <h3 class="white center-content no-margin padding-right-sm">
+                    $
+                </h3>
+                <h2 class="white center-content no-margin"
+                    *ngIf="!monthlyPrice"
+                >
+                    249.99
+                </h2>
+                <h2 class="white center-content no-margin"
+                    *ngIf="monthlyPrice"
+                >
+                    24.99
+                </h2>
+            </div>
 
             <div class="benefits center-content padding-vertical-sm">
                 <h4 class="white no-margin">
@@ -85,9 +111,23 @@
             <h4 class="primary-dark center-content no-margin padding-vertical-md">
                 Master
             </h4>
-            <h2 class="primary-dark center-content no-margin padding-bottom-lg">
-                $ 399.99
-            </h2>
+
+            <div class="center-content padding-bottom-lg">
+                <h3 class="primary-dark center-content no-margin padding-right-sm">
+                    $
+                </h3>
+                <h2 class="primary-dark center-content no-margin"
+                    *ngIf="!monthlyPrice"
+                >
+                    399.99
+                </h2>
+                <h2 class="primary-dark center-content no-margin"
+                    *ngIf="monthlyPrice"
+                >
+                    39.99
+                </h2>
+            </div>
+
 
             <div class="benefits center-content padding-vertical-sm">
                 <h4 class="primary-dark no-margin">
