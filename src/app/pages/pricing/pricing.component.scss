@@ -20,6 +20,14 @@ $primary-gradient: linear-gradient(to right bottom, hsl(236, 72%, 79%), hsl(237,
     color: white;
 }
 
+.main {
+    background-color: var(--background-color);
+    background-image: url('/assets/pricing/images/bg-top.svg'),
+    url('/assets/pricing/images/bg-bottom.svg');
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+}
+
 .pricing {
     position: relative;
     padding-right: 1rem;

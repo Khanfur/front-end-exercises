@@ -1,0 +1,32 @@
+.main {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'content'
+        'footer';
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 60px;
+
+    min-height: 100vh;
+
+    position: relative;
+    min-width: 20.8571rem;
+    max-width: 79.4286rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin: 0 auto;
+
+    #header {
+        background-color: green;
+        box-shadow: 0 15px 10px -15px rgba(0, 0, 0, 0.08);
+    }
+
+    #content {
+        background-color: blue;
+    }
+
+    #footer {
+        background-color: yellow;
+    }
+}

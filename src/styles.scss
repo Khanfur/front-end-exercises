@@ -7,8 +7,4 @@ html, body {
 body {
     margin: 0;
     background-color: var(--background-color);
-    background-image: url('/assets/pricing/images/bg-top.svg'),
-    url('/assets/pricing/images/bg-bottom.svg');
-    background-position: top right, bottom left;
-    background-repeat: no-repeat;
 }
