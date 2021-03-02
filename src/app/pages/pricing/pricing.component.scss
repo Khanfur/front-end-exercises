@@ -137,11 +137,6 @@ $primary-gradient: linear-gradient(to right bottom, hsl(236, 72%, 79%), hsl(237,
                 padding-top: 8px;
                 padding-bottom: 8px;
                 border-top: 1px solid $primary-medium;
-
-                &:last-child {
-                    border-top: 1px solid $primary-medium;
-                    border-bottom: 1px solid $primary-medium;
-                }
             }
         }
 
@@ -165,12 +160,8 @@ $primary-gradient: linear-gradient(to right bottom, hsl(236, 72%, 79%), hsl(237,
                 padding-top: 8px;
                 padding-bottom: 8px;
                 border-top: 1px solid $primary-light;
-
-                &:last-child {
-                    border-top: 1px solid $primary-light;
-                    border-bottom: 1px solid $primary-light;
-                }
             }
+
         }
 
 
